@@ -1,0 +1,1 @@
+This is a sandbox repository to play with rails. Based on Learn Rails by Daniel Kehoe and The Rails Tutorial by Michael Hartl.

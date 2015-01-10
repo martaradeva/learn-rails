@@ -32,6 +32,20 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#following gems added from learn-rails book
+#gem 'activerecord-tableless' #– helps to use Rails without a database
+gem 'foundation-rails' # – front-end framework
+#gem 'gibbon' # – access to the MailChimp API
+#gem 'google_drive' # – use Google Drive spreadsheets for data storage
+gem 'high_voltage' # – for static pages like “about”
+gem 'simple_form' # – forms made easy
+
+group :development do
+gem 'better_errors' # – helps when things go wrong
+gem 'quiet_assets' # – suppresses distracting messages in the log
+gem 'rails_layout' # – generates files for an application layout
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

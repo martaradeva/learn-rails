@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-root to: 'tasks#show'
+# root to: redirect('/home')
+get '/tasks/show', to: 'tasks#show'
+get '/home' => 'pages#home'
+# match '/about' => 'pages#about'
+# match '/contact' => 'pages#contact'
 end
 
 # Rails.application.routes.draw do

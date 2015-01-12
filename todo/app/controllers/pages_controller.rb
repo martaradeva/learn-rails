@@ -1,10 +1,13 @@
 class PagesController < ApplicationController
-  def home
+
+  rescue_from ActionView::MissingTemplate, :with => :invalid_page
+
+  def show
+    render params[:id]
   end
 
-  # def about
-  # end
+  def invalid_page
+    redirect_to root_path
+  end
 
-  # def contact
-  # end
 end

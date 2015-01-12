@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
-# root to: redirect('/home')
+root to: redirect('/pages/home')
 get '/tasks/show', to: 'tasks#show'
-get '/home' => 'pages#home'
+get 'pages/:id' => 'pages#show'
+
 # match '/about' => 'pages#about'
 # match '/contact' => 'pages#contact'
 end
+
+#map.page "/pages/:id", :controller => "pages", :action => "show", :requirements => { :id => /[a-z]+/ }
 
 # Rails.application.routes.draw do
 # root to: 'visitors#new'

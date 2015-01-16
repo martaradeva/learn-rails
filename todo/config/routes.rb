@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
-root to: redirect('/pages/home')
-get '/tasks/show', to: 'tasks#show'
-get 'pages/:id' => 'pages#show'
+  resources :tasks
+  post 'tasks/:id' => 'tasks#update'
+  root to: redirect('/tasks')
+# get '/tasks/show', to: 'tasks#show'
+# get 'pages/:id' => 'pages#show'
 
 # match '/about' => 'pages#about'
 # match '/contact' => 'pages#contact'
-end
+
 
 #map.page "/pages/:id", :controller => "pages", :action => "show", :requirements => { :id => /[a-z]+/ }
 
@@ -71,3 +73,4 @@ end
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+end

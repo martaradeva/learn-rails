@@ -1,3 +1,4 @@
 class Task < ActiveRecord::Base
-  attr_accessor :name, :description, :priority, :urgency, :importance
+  validates :name, presence: true
+  validates :description, presence: true
 end

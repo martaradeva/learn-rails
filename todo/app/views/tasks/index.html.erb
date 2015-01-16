@@ -1,0 +1,19 @@
+<h1>Dynamic Tasks Page</h1>
+<p>Show all tasks.</p>
+<% @tasks.each do |task| %>
+	<div>
+		<h3><%= link_to task.name, task_path(task)%></h3>
+		<%= task.description %>
+		<div>
+			<%= link_to "Show", task_path(task) %>
+			<%= link_to "Edit", edit_task_path(task) %>
+		</div>
+	</div>
+<% end -%>
+
+
+<%= link_to "Add new task.", new_task_path %>
+
+<p>
+
+Go back <%= link_to 'home', root_path %>.

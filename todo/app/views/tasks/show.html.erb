@@ -1,5 +1,9 @@
-<h1>Dynamic Tasks Page</h1>
-<p>Show all tasks.</p>
-<p><%= @task.name %></p>
-
-Go back <a href="../pages/home">home</a>.
+<h1>Single Task Page</h1>
+<p>Show single task.</p>
+<%= @current_task.name %>
+<br>
+<%= @current_task.description %>
+<p>
+<%= link_to "Edit", edit_task_path(@current_task) %>
+<p>
+Go back <%= link_to 'home', root_path %>.

@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(version: 20150112131435) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "priority"
-    t.boolean  "urgency"
-    t.boolean  "importance"
+    t.boolean  "urgent"
+    t.boolean  "important"
   end
 
 end

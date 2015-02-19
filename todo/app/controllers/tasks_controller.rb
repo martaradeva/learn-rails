@@ -1,6 +1,7 @@
 class TasksController < ApplicationController
   def index
     @tasks = Task.all
+    @greeting = I18n.t ('hello')
   end
 
   def new

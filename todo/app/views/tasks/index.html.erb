@@ -1,5 +1,7 @@
 <h1>Dynamic Tasks Page</h1>
-<p>Show all tasks.</p>
+
+<%= @greeting %>
+
 <% @tasks.each do |task| %>
 	<div>
 		<h3><%= link_to task.name, task_path(task)%></h3>

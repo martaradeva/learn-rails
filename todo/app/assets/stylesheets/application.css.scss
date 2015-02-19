@@ -1866,8 +1866,8 @@ pre code {
 .container-fluid {
 	margin-right:auto;
 	margin-left:auto;
-	padding-left:15px;
-	padding-right:15px
+	padding-left:0px;
+	padding-right:0px
 }
 
 .row {
@@ -4189,7 +4189,7 @@ margin-top:0
 
 .nav>li {
 	position:relative;
-	display:block
+	display:inline-block
 }
 
 .nav>li>a {

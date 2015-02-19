@@ -42,6 +42,8 @@ gem 'foundation-rails' # – front-end framework
 #gem 'google_drive' # – use Google Drive spreadsheets for data storage
 #gem 'high_voltage' # – for static pages like “about”
 gem 'simple_form' # – forms made easy
+gem 'rails-i18n'
+
 
 group :development do
 gem 'better_errors' # – helps when things go wrong

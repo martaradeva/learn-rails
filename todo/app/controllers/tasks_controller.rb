@@ -10,6 +10,8 @@ class TasksController < ApplicationController
 
   def create
     #render :text => params.inspect
+    @url_hash={controller: "tasks", action: "create"}
+
     @current_task = Task.create params.require("task").permit("name", "description")
     if @current_task.valid?
       redirect_to action: "show", id: @current_task.id
@@ -20,6 +22,7 @@ class TasksController < ApplicationController
 
   def edit
     @current_task = Task.find_by id: params["id"]
+    @url_hash={controller: "tasks", action: "update"}
   end
 
   def update

@@ -1,10 +1,10 @@
-<h1>New Task Page</h1>
-<p>Create a new task.</p>
+<h1><%= I18n.t ('new_task_page')%></h1>
+<p><%= I18n.t ('new_task_description')%></p>
 
 <%= @current_task.errors.full_messages.to_sentence %>
 
 <%= form_for @current_task, url: {controller: "tasks", action: "create"} do |form| %>
   <%= form.text_field :name %>
   <%= form.text_area :description, size: "24x6" %>
-  <%= form.submit "Create task" %>
+  <%= form.submit (I18n.t ('save')) %>
 <% end %>

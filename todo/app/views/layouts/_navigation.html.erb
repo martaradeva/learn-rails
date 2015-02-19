@@ -1,7 +1,7 @@
 <%# navigation styled for Zurb Foundation 5 %>
 <nav class="top-bar" data-topbar>
   <ul class="title-area">
-    <li class="name"><%= link_to 'To Do app', root_path %></li>
+    <li class="name"><%= link_to I18n.t ('application_name'), root_path %></li>
     <li class="name"><%= link_to 'New task', new_task_path %></li>
     <li class="name"><%= link_to 'About', 'pages/about' %></li>
     <li class="toggle-topbar menu-icon"><%= link_to 'New task', new_task_path %></li>

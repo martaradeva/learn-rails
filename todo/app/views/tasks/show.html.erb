@@ -1,9 +1,9 @@
-<h1>Single Task Page</h1>
-<p>Show single task.</p>
+<h1><%= I18n.t ('show_task_page')%></h1>
+<p><%= I18n.t ('show_task_description')%></p>
 <%= @current_task.name %>
 <br>
 <%= @current_task.description %>
 <p>
-<%= link_to "Edit", edit_task_path(@current_task) %>
+<%= link_to (I18n.t ('edit')), edit_task_path(@current_task) %>
 <p>
-Go back <%= link_to 'home', root_path %>.
+<%= link_to (I18n.t ('home')), root_path %>.

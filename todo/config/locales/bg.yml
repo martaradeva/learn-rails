@@ -2,6 +2,8 @@ bg:
 # content
   hello: "Здравей, свят"
   task: "задача"
+  name: "име"
+  description: "описание"
   application_name: "Задачник"
   index_page: "Динамичен списък със задачи"
   save: "Запази!"

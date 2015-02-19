@@ -1,18 +1,11 @@
 <h1><%= I18n.t ('index_page')%></h1>
-
-<%= @greeting %>
+<p class="text-info"><%= @greeting %></p>
 
 <% @tasks.each do |task| %>
 	<div>
-		<%= link_to task.name, task_path(task)%>
-		<%= link_to (I18n.t ('show')), task_path(task) %>		
-		<%= link_to (I18n.t ('edit')), edit_task_path(task) %>			
+		<div class="inline lead"><%= link_to task.name, task_path(task)%></div>
+		<div class="inline link"><%= link_to (I18n.t ('show')), task_path(task) %></div>		
+		<div class="inline link"><%= link_to (I18n.t ('edit')), edit_task_path(task) %></div>		
 	</div>
-<% end -%>
-
-
-<%= link_to (I18n.t ('new_task_page')), new_task_path %>
-
-<p>
-
-<%= link_to (I18n.t ('home')), root_path %>
+<% end %>
+<div class="link"><%= link_to (I18n.t ('new_task_page')), new_task_path %></div>

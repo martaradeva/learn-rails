@@ -1509,14 +1509,14 @@ h6,.h6 {
 }
 
 p {
-	margin:0 0 10.5px
+	margin:5 5 10.5px;
 }
 
 .lead {
 	margin-bottom:21px;
 	font-size:17px;
 	font-weight:300;
-	line-height:1.4
+	line-height:1.4;
 }
 
 @media (min-width:768px) {
@@ -1524,8 +1524,9 @@ p {
 	font-size:22.5px
 }
 
-
 }
+
+
 
 small,.small {
 	font-size:86%
@@ -7425,5 +7426,22 @@ a.list-group-item-danger.active:hover,a.list-group-item-danger.active:focus {
 	border:none
 }
 
+.inline {
+	display:inline-block;
+}
 
+.link {
+	padding:5px;
+	margin:5px;
+	color:#f0ad4e;
+	background-color:#4e5d6c;
+}
 
+.form-task {
+	@extend .form-horizontal;
+	width:90%;
+}
+
+.form-task input, .form-task textarea {
+	width:100%;
+}

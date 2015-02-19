@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :tasks
   post 'tasks/:id' => 'tasks#update'
   root to: redirect('/tasks')
+  get 'pages/:action' => 'pages#:action'
+
 # get '/tasks/show', to: 'tasks#show'
 # get 'pages/:id' => 'pages#show'
 

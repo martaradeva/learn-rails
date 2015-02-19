@@ -5,7 +5,9 @@ bg:
   application_name: "Задачник"
   index_page: "Динамичен списък със задачи"
   save: "Запази!"
-  about: "За нас"
+#about page
+  about_page: "За нас"
+  about_description: "Това е един чутовно як задачник."
 
 #new task
   new_task_page: "Нова задача"

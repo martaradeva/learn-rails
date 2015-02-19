@@ -5,9 +5,10 @@ bg:
   application_name: "Задачник"
   index_page: "Динамичен списък със задачи"
   save: "Запази!"
+  about: "За нас"
 
 #new task
-  new_task_page: "Добави нова задача"
+  new_task_page: "Нова задача"
   new_task_description: "На тази страница може да създадете нова задача"
 
 # Edit Task

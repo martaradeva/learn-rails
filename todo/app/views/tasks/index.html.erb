@@ -4,12 +4,9 @@
 
 <% @tasks.each do |task| %>
 	<div>
-		<h3><%= link_to task.name, task_path(task)%></h3>
-		<%= task.description %>
-		<div>
-			<%= link_to (I18n.t ('show')), task_path(task) %>
-			<%= link_to (I18n.t ('edit')), edit_task_path(task) %>
-		</div>
+		<%= link_to task.name, task_path(task)%>
+		<%= link_to (I18n.t ('show')), task_path(task) %>		
+		<%= link_to (I18n.t ('edit')), edit_task_path(task) %>			
 	</div>
 <% end -%>
 
